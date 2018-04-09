@@ -17,6 +17,7 @@
 		0FD433FF207BBBC7005A7EB3 /* SaasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD433FE207BBBC7005A7EB3 /* SaasController.swift */; };
 		0FD43401207BDF83005A7EB3 /* DemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD43400207BDF83005A7EB3 /* DemoController.swift */; };
 		0FD43403207BEAA8005A7EB3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD43402207BEAA8005A7EB3 /* Logger.swift */; };
+		BB10CBFA7B69EED18F4A2E35 /* Pods_CycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64AEDD20C65FD9A19CC75 /* Pods_CycleView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		0FD433FE207BBBC7005A7EB3 /* SaasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaasController.swift; sourceTree = "<group>"; };
 		0FD43400207BDF83005A7EB3 /* DemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoController.swift; sourceTree = "<group>"; };
 		0FD43402207BEAA8005A7EB3 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		15C64AEDD20C65FD9A19CC75 /* Pods_CycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		348E2133059A1FCF076467CE /* Pods-CycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CycleView/Pods-CycleView.release.xcconfig"; sourceTree = "<group>"; };
+		F0B7D0788860841440921BB3 /* Pods-CycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CycleView/Pods-CycleView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB10CBFA7B69EED18F4A2E35 /* Pods_CycleView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				0FD433E5207B3697005A7EB3 /* CycleView */,
 				0FD433E4207B3697005A7EB3 /* Products */,
+				DDE9C05E9F24E866E7AB55F5 /* Pods */,
+				A42390C24269F8A999141882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			path = CycleView;
 			sourceTree = "<group>";
 		};
+		A42390C24269F8A999141882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15C64AEDD20C65FD9A19CC75 /* Pods_CycleView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDE9C05E9F24E866E7AB55F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0B7D0788860841440921BB3 /* Pods-CycleView.debug.xcconfig */,
+				348E2133059A1FCF076467CE /* Pods-CycleView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FD433F5207B3697005A7EB3 /* Build configuration list for PBXNativeTarget "CycleView" */;
 			buildPhases = (
+				FBDF7CBF985C88357AD8B4D4 /* [CP] Check Pods Manifest.lock */,
 				0FD433DF207B3697005A7EB3 /* Sources */,
 				0FD433E0207B3697005A7EB3 /* Frameworks */,
 				0FD433E1207B3697005A7EB3 /* Resources */,
+				F2CED769C8917B6703598C31 /* [CP] Embed Pods Frameworks */,
+				5ED3C7E3740A0A2BB831CF9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5ED3C7E3740A0A2BB831CF9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CycleView/Pods-CycleView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CED769C8917B6703598C31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CycleView/Pods-CycleView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CycleView/Pods-CycleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBDF7CBF985C88357AD8B4D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CycleView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FD433DF207B3697005A7EB3 /* Sources */ = {
@@ -284,6 +365,7 @@
 		};
 		0FD433F6207B3697005A7EB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B7D0788860841440921BB3 /* Pods-CycleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -300,6 +382,7 @@
 		};
 		0FD433F7207B3697005A7EB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348E2133059A1FCF076467CE /* Pods-CycleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
